@@ -1,0 +1,153 @@
+/* Reseting Defaust padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities and veriables */
+
+:root {
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --PrimarySoftBlue: hsl(215, 51%, 70%);
+  --PrimaryCyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%)
+}
+
+/* styling a body */
+body{
+    background: var(--mainBG);
+    font-size: 18px;
+    font-family: 'Outfit' ,sans-serif;
+    color: #fff;
+}
+
+
+.container{
+    background: var(--cardBG);
+    width: 350px;
+    height: 596px;
+    padding: 1px;
+    margin: 151px auto;
+    border-radius: 15px;
+
+}
+
+.rectangle{
+    background-image: linear-gradient(rgba(0,255,248,0), rgba(0,255,248,0)), url(images/image-equilibrium.jpg);
+    background-size: cover;
+    height: 302px;
+    width: 302px;
+    margin: 24px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rectangle:active{
+    background-image: linear-gradient(rgba(0,255,248,0.5), rgba(0,255,248,0.5)), url(images/image-equilibrium.jpg);
+}
+
+.rectangle svg{
+    display: none;
+}
+
+.rectangle:active svg{
+    display: block;
+}
+
+.title{
+    margin-left: 24px;
+    margin-bottom: 18px;
+}
+.title h2{
+    font-weight: 600;
+   font-size: 22px;
+   line-height: 28px;
+   cursor: pointer;
+}
+.title h2:active{
+    color: var(--PrimaryCyan);
+}
+
+.details{
+    margin: 24px;
+    line-height: 24px;
+    color: var(--PrimarySoftBlue);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.more-details{
+    margin: 24px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.more-details p{
+    font-size: 18px;
+}
+
+.left, .right{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left p{
+    padding-left: 7px;
+    color: var(--PrimaryCyan);
+}
+.right p{
+    padding-left: 7px;
+    color: var(--PrimarySoftBlue);
+}
+
+
+.bottom{
+    margin: 16px 24px 0 24px;
+    height: 1px;
+    width: 300px;
+    background: var(--PrimarySoftBlue);
+}
+
+.creator{
+    margin: 16px 24px 0 24px;
+    height: 33px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.creator img{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+}
+
+.creator p{
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.creator p span{
+    color: var(--PrimarySoftBlue);
+    cursor: pointer;
+ }
+ 
+.creator p:active{
+    color: var(--PrimaryCyan);
+ }
+ 
+ 
+ @media screen and (max-width: 425px) {
+    .container{
+       width: 327px;
+       margin: 61px auto;
+    }
+ }

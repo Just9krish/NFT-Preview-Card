@@ -24,7 +24,7 @@ body{
     color: #fff;
 }
 
-
+/* main division styling */
 .container{
     background: var(--cardBG);
     width: 350px;
@@ -32,9 +32,9 @@ body{
     padding: 1px;
     margin: 151px auto;
     border-radius: 15px;
-
 }
 
+/* Position for placing a image between in */
 .rectangle{
     background-image: linear-gradient(rgba(0,255,248,0), rgba(0,255,248,0)), url(images/image-equilibrium.jpg);
     background-size: cover;
@@ -48,18 +48,22 @@ body{
     cursor: pointer;
 }
 
+/* change color on clicking mouse over image */
 .rectangle:active{
     background-image: linear-gradient(rgba(0,255,248,0.5), rgba(0,255,248,0.5)), url(images/image-equilibrium.jpg);
 }
 
+/* Hiding svg image normally */
 .rectangle svg{
     display: none;
 }
 
+/* Displaying svg image on click */
 .rectangle:active svg{
     display: block;
 }
 
+/* Styling text */
 .title{
     margin-left: 24px;
     margin-bottom: 18px;
@@ -70,6 +74,8 @@ body{
    line-height: 28px;
    cursor: pointer;
 }
+
+/* Change color on clicking  */
 .title h2:active{
     color: var(--PrimaryCyan);
 }
@@ -82,6 +88,7 @@ body{
     font-weight: 300;
 }
 
+/* Division of details */
 .more-details{
     margin: 24px 24px 0 24px;
     display: flex;
@@ -93,21 +100,25 @@ body{
     font-size: 18px;
 }
 
+/* Positioning the icons and text  */
 .left, .right{
     display: flex;
     justify-content: flex-start;
 }
 
+/* icon-ethereum */
 .left p{
     padding-left: 7px;
     color: var(--PrimaryCyan);
 }
+
+/* icon-clock */
 .right p{
     padding-left: 7px;
     color: var(--PrimarySoftBlue);
 }
 
-
+/* Creating a soft line */
 .bottom{
     margin: 16px 24px 0 24px;
     height: 1px;
@@ -115,6 +126,7 @@ body{
     background: var(--PrimarySoftBlue);
 }
 
+/* Styling a creator */
 .creator{
     margin: 16px 24px 0 24px;
     height: 33px;
@@ -123,6 +135,7 @@ body{
     align-items: center;
 }
 
+ /* image of creator */
 .creator img{
     border: 1px solid #fff;
     border-radius: 50%;
@@ -138,16 +151,16 @@ body{
 .creator p span{
     color: var(--PrimarySoftBlue);
     cursor: pointer;
- }
+}
  
 .creator p:active{
     color: var(--PrimaryCyan);
- }
- 
- 
- @media screen and (max-width: 425px) {
+}
+
+/* Screen on Mobile */
+@media screen and (max-width: 425px) {
     .container{
        width: 327px;
        margin: 61px auto;
     }
- }
+}

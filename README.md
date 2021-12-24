@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./images/NFT card.png)
+![ScreenShot](./images/NFT card.jpg)
 
 
 ### Links

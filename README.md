@@ -25,8 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![ScreenShot]("NFT card.png")
-
+![](./screenshot.jpg)
 
 ### Links
 

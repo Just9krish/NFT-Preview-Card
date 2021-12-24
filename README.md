@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![ScreenShot]("C:\MyfFiles\nft-preview-card-component-main\images\NFT card.png")
+![ScreenShot]("NFT card.png")
 
 
 ### Links
